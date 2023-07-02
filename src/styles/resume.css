@@ -1,0 +1,55 @@
+#resume {
+    background: var(--color-background-alt-between);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    overflow: hidden;
+ }
+ 
+ #resume a, #resume a:visited { color: var(--color-link-alt); }
+ #resume a:hover, #resume a:focus {color: var(--color-link); }
+ 
+ #resume h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+ }
+ 
+ #resume h1 span {
+    border-bottom: 3px solid var(--color-link-alt);
+    padding-bottom: 6px;
+ }
+ 
+ #resume h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+ }
+ 
+ #resume .header-col {
+    padding-top: 9px;
+ }
+ 
+ #resume .main-col {
+    padding-right: 10%;
+ }
+ 
+ .experience, .education, .skill, .community, .leadership {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--color-background-alt-light);
+ }
+ 
+ #resume .info {
+    font: 16px/24px 'librebaskerville-normal', serif;
+    color: var(--color-text-dark);
+    margin-bottom: 18px;
+    margin-top: 9px;
+ }
+ 
+ #resume .info span {
+    margin-right: 5px;
+    margin-left: 5px;
+ }
+ 
+ #resume .date {
+    font: 15px/24px 'opensans-italic', sans-serif;
+    margin-top: 6px;
+ }
