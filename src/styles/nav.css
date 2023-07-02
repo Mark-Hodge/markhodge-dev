@@ -1,0 +1,62 @@
+ /* primary navigation
+ -------------------------------------------------------------------------------------------------------------- */
+ #nav-wrap {
+    font: 14px 'opensans-bold', sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0 auto;    /* top | right and left | bottom */
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+ }
+ 
+ .opaque { background-color: var(--color-opaque); }
+ 
+ #nav-wrap ul, #nav-wrap li, #nav-wrap a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+ }
+ 
+ /* Hide mobile toggle button */
+ #nav-wrap > a.mobile-btn { display: none; }
+ 
+ ul#nav {
+    min-height: 48px;
+    width: auto;
+ 
+    /* center align the menu */
+    text-align: center;
+ }
+ 
+ ul#nav li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    height: 48px;
+ }
+ 
+ /* Links */
+ ul#nav li a {
+    display: inline-block;
+ 
+    /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+    padding: 8px 13px;
+    line-height: 32px;
+ 
+    text-decoration: none;
+    text-align: left;
+    color: rgb(255, 255, 255);
+ 
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+ }
+ 
+ ul#nav li a:active { background-color: transparent !important; }
+ ul#nav li.current a { color: #ff6600; }
