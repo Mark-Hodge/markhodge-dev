@@ -4,7 +4,7 @@
 /*
 -----------------------------------------------------------------------------------*/
 
-$(function($) {
+ jQuery(document).ready(function($) {
 
 /*----------------------------------------------------*/
 /* FitText Settings
@@ -137,7 +137,7 @@ $(function($) {
 /*	contact form
 ------------------------------------------------------*/
 
-   $('form#contactForm button.submit').trigger(function() {
+   $('form#contactForm button.submit').click(function() {
 
       $('#image-loader').fadeIn();
 
@@ -157,7 +157,7 @@ $(function($) {
 	      success: function(msg) {
 
             // Message was sent
-            if (msg === 'OK') {
+            if (msg == 'OK') {
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
