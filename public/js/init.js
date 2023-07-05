@@ -10,10 +10,9 @@
 /* FitText Settings
 ------------------------------------------------------ */
 
-    setTimeout(function() {
-	   $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
-	 }, 100);
-
+   setTimeout(function() {
+   $('h1.responsive-headline').fitText(1, { minFontSize: '40px', maxFontSize: '90px' });
+   }, 100);
 
 /*----------------------------------------------------*/
 /* Smooth Scrolling
@@ -31,7 +30,6 @@
 	        window.location.hash = target;
 	    });
 	});
-
 
 /*----------------------------------------------------*/
 /* Highlight the current section in the navigation bar
@@ -56,9 +54,7 @@
 
 		},
 		offset: '35%'
-
 	});
-
 
 /*----------------------------------------------------*/
 /*	Make sure that #header-background-image height is
@@ -71,7 +67,6 @@
         $('header').css({ 'height': $(window).height() });
         $('body').css({ 'width': $(window).width() })
    });
-
 
 /*----------------------------------------------------*/
 /*	Fade In/Out Primary Navigation
@@ -94,28 +89,26 @@
             nav.addClass('opaque').fadeIn('fast');
          }
       }
-
 	});
-
 
 /*----------------------------------------------------*/
 /*	Modal Popup
 ------------------------------------------------------*/
 
-    $('.item-wrap a').magnificPopup({
+   $('.item-wrap a').magnificPopup({
 
-       type:'inline',
-       fixedContentPos: false,
-       removalDelay: 200,
-       showCloseBtn: false,
-       mainClass: 'mfp-fade'
+      type:'inline',
+      fixedContentPos: false,
+      removalDelay: 200,
+      showCloseBtn: false,
+      mainClass: 'mfp-fade'
 
-    });
+   });
 
-    $(document).on('click', '.popup-modal-dismiss', function (e) {
-    		e.preventDefault();
-    		$.magnificPopup.close();
-    });
+   $(document).on('click', '.popup-modal-dismiss', function (e) {
+      e.preventDefault();
+      $.magnificPopup.close();
+   });
 
 
 /*----------------------------------------------------*/
@@ -175,14 +168,4 @@
       });
       return false;
    });
-
-
 });
-
-
-
-
-
-
-
-
