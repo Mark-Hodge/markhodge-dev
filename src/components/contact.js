@@ -30,18 +30,28 @@ const Contact = ({ data }) => {
                 time_stamp: date.toString()
         };
 
-        emailjs
-        .send('service_7dggiib', 'template_xppz30e', templateParams, {
-            publicKey: 'p0loCR_Y0Wx794PTF'
-        })
-        .then(
-            (response) => {
-                console.log('SUCCESS!', response.status, response.text);
-            },
-            (err) => {
+        try {
+            emailjs.init({
+                publicKey: 'p0loCR_Y0Wx794PTF'
+            });
+            
+            emailjs.send('service_7dggiib',
+                               'template_xppz30e',
+                                templateParams
+            ).then(
+                (response) => {
+                    console.log('Form submission success', response.status, response.text);
+                },
+                (err) => {
                 console.log('FAILED...', err);
-            },
-        );
+                }
+            );
+        }
+        catch (err) {
+            console.log('Form submission failed', err);
+            console.error('MAILJS FAILED: ', err);
+            return;
+        }
 
         console.log("Contact form submitted with the following.",
                     "from_first_name: " + formFirstName,
