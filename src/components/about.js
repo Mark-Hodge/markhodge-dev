@@ -41,7 +41,7 @@ const About = ({ data }) => {
                                 </span>
                                 <br />
                                 <span className="tooltip">
-                                    <p className="about-email" id="contact-email" onClick={CopyEmail}><span className="tooltiptext">Copy to clipboard</span>{email}</p>
+                                    <p className="email" id="contact-email" onClick={CopyEmail}><span className="tooltiptext">Copy to clipboard</span>{email}</p>
                                 </span>
                             </p>
                         </div>
