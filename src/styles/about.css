@@ -16,7 +16,7 @@
     color: var(--color-background-alt-light);
  }
 
- #about .about-email {
+ #about .email {
    color: var(--color-link-current);
    cursor: grab;
    margin-bottom: 0px;
