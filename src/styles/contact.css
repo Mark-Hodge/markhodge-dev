@@ -34,7 +34,6 @@
  #contact h4 {
     font: 16px/24px 'opensans-bold', sans-serif;
     color: var(--color-background-alt-between);
-    margin-top: 26px;
     margin-bottom: 6px;
  }
  
@@ -92,6 +91,15 @@
  #contact span.required {
     color: var(--color-link-current);
     font-size: 13px;
+ }
+
+ #contact .address {
+   margin-bottom: 0;
+ }
+
+ #contact .address span{
+   color: var(--color-link-alt);
+   margin-bottom: 0;
  }
  
  #message-warning, #message-success {
