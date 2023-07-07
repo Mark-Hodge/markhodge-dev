@@ -34,7 +34,7 @@ const Contact = ({ data }) => {
             emailjs.init({
                 publicKey: 'p0loCR_Y0Wx794PTF'
             });
-            
+
             emailjs.send('service_7dggiib',
                                'template_xppz30e',
                                 templateParams
