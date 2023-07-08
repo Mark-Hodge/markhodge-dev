@@ -129,43 +129,49 @@
 /*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/
+   $('#contact-form').on('submit', function(event) {
+      event.preventDefault();
 
-   $('form#contactForm button.submit').click(function() {
+      var formFirstName = $('#contact-form #contactFirstName').val();
+      var formLastName = $('#contact-form #contactLastName').val();
+      var formEmail = $('#contact-form #contactEmail').val();
+      var formSubject = $('#contact-form #contactSubject').val();
+      var formMessage = $('#contact-form #contactMessage').val();
+      var date = new Date();
 
-      $('#image-loader').fadeIn();
-
-      var contactName = $('#contactForm #contactName').val();
-      var contactEmail = $('#contactForm #contactEmail').val();
-      var contactSubject = $('#contactForm #contactSubject').val();
-      var contactMessage = $('#contactForm #contactMessage').val();
-
-      var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail +
-               '&contactSubject=' + contactSubject + '&contactMessage=' + contactMessage;
-
-      $.ajax({
-
+      var requestData = {
+         service_id: 'service_7dggiib',
+         template_id: 'template_xppz30e',
+         user_id: 'p0loCR_Y0Wx794PTF',
+         template_params: {
+            from_first_name: formFirstName,
+            from_last_name: formLastName,
+            reply_to: formEmail,
+            subject: formSubject,
+            message: formMessage,
+            time_stamp: date.toString()
+         }
+      };
+      
+      $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
 	      type: "POST",
-	      url: "inc/sendEmail.php",
-	      data: data,
-	      success: function(msg) {
-
-            // Message was sent
-            if (msg == 'OK') {
-               $('#image-loader').fadeOut();
-               $('#message-warning').hide();
-               $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
-            }
-            // There was an error
-            else {
-               $('#image-loader').fadeOut();
-               $('#message-warning').html(msg);
-	            $('#message-warning').fadeIn();
-            }
-
-	      }
-
+         contentType: 'application/json',
+         data: JSON.stringify(requestData),
+         success: function(msg, status, jqXHR) {
+            alert("Your info has been sent, Thank you!");
+            $('#message-warning').hide();
+            $('#contactForm').fadeOut();
+            $('#message-success').fadeIn();
+            console.log("Contact form sent successfully\n" +
+               "status: " + status + "\nReason: " + msg.status + " " + jqXHR + date.toString());
+         },
+         error: function(msg, status, jqXHR) {
+            alert("There was a problem submitting your info.\n" + "Please reach out directly: " + "mark@markhodge.dev");
+            $('#message-warning').html("There was a problem submitting your info.");
+            $('#message-warning').fadeIn();
+            console.log("Contact form failed\n" +
+               "status: " + status + "\nReason: " + msg.status + " " + jqXHR + date.toString());
+         }
       });
-      return false;
    });
 });

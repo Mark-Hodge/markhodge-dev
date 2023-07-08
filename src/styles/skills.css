@@ -91,7 +91,7 @@
   }
   
   /* Large screens: min width 1080px, change to 8 coloums */
-  @media screen and (min-width: 1080px) {
+  @media screen and (min-width: 1195px) {
     .skillsGrid{
       display: grid;
       grid-template-columns: repeat(6, 1fr);

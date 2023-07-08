@@ -63,17 +63,6 @@ const Resume = ({ data }) => {
     return (
         <section id="resume">
 
-            {/* Education */}
-            <div className="row education">
-                <div className="three columns header-col">
-                    <h1>
-                        <span>Education</span>
-                    </h1>
-                </div>
-
-                <div className="nine columns main-col">{education}</div>
-            </div>
-
             {/* Work experience */}
             <div className="row experience">
                 <div className="three columns header-col">
@@ -83,6 +72,17 @@ const Resume = ({ data }) => {
                 </div>
 
                 <div className="nine columns main-col">{experience}</div>
+            </div>
+
+            {/* Education */}
+            <div className="row education">
+                <div className="three columns header-col">
+                    <h1>
+                        <span>Education</span>
+                    </h1>
+                </div>
+
+                <div className="nine columns main-col">{education}</div>
             </div>
 
             {/* Community */}

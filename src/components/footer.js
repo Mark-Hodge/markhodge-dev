@@ -23,7 +23,7 @@ const Footer = ({ data }) => {
 
                     <ul className="copyright">
                         <li>
-                            Copyright © 2023 | Mark Hodge | Website By: <a className="footerLink" href="markhodge.dev"> {siteLink}</a>
+                            Copyright © 2023 | Mark Hodge | Website By: <a className="footerLink" href="me.markhodge.dev"> {siteLink}</a>
                         </li>
                     </ul>
                     {/* <p>
