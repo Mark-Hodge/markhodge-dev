@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import emailjs from '@emailjs/nodejs';
 import "../styles/contact.css";
 
-const Contact = ({ data }) => {
+function Contact ({ data }) {
     const [formFirstName, setFormFirstName] = useState("");
     const [formLastName, setFormLastName] = useState("");
     const [formEmail, setFormEmail] = useState("");
@@ -17,49 +16,14 @@ const Contact = ({ data }) => {
         var contactMessage = data.contactmessage;
     };
     
-    function handleSubmit() {
-
-        var date = new Date();
-
-        var templateParams = {
-                from_first_name: formFirstName,
-                from_last_name: formLastName,
-                reply_to: formEmail,
-                subject: formSubject,
-                message: formMessage,
-                time_stamp: date.toString()
-        };
-
-        try {
-            emailjs.init({
-                publicKey: 'p0loCR_Y0Wx794PTF'
-            });
-
-            emailjs.send('service_7dggiib',
-                               'template_xppz30e',
-                                templateParams
-            ).then(
-                (response) => {
-                    console.log('Form submission success', response.status, response.text);
-                },
-                (err) => {
-                console.log('FAILED...', err);
-                }
-            );
-        }
-        catch (err) {
-            console.log('Form submission failed', err);
-            console.error('MAILJS FAILED: ', err);
-            return;
-        }
-
-        console.log("Contact form submitted with the following.",
-                    "from_first_name: " + formFirstName,
-                    "from_last_name: " + formLastName,
-                    "reply_to: " + formEmail,
-                    "subject: " + formSubject,
-                    "message: " + formMessage,
-                    "time_stamp:" + date.toString())
+    const sendEmail = (event) => {
+        setFormFirstName("");
+        setFormLastName("");
+        setFormEmail("");
+        setFormSubject("");
+        setFormSubject("");
+        setFormMessage("");
+        window.location.href = "/#contact";
     };
 
     return (
@@ -78,7 +42,7 @@ const Contact = ({ data }) => {
 
             <div className="row">
                 <div className="eight columns">
-                    <form id="contact-form" onSubmit={handleSubmit}>
+                    <form id="contact-form" onSubmit={sendEmail}>
                         <fieldset>
                             <div>
                                 <label htmlFor="contactFirstName">
