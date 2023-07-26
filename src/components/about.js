@@ -30,6 +30,7 @@ const About = ({ data }) => {
                 <div className="nine columns main-col">
                     <h2>About Me</h2>
                     <p>{bio}</p>
+                    <p>If that photo of the cannon interests you, ask me about it.</p>
                     <div className="row">
                         <div className="columns contact-details">
                             <h2>Contact Details</h2>

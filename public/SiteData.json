@@ -1,7 +1,7 @@
 {
     "main": {
         "name": "Mark Hodge",
-        "occupation": "Software Engineer, Service Member, Future Pilot, and Web Developer",
+        "occupation": "Software Engineer, Service Member, Future Pilot, and I built this website too.",
         "description": "I'm not on the typical tech career path, see what I can bring to the table!",
         "image": "mark-dock.jpeg",
         "bio": "Hi, I am Mark Hodge. I have been a Software Engineer in the logistics industry for over three years, primarily working on backend projects. My front-end skills are self-taught, and this website is part of that. I am originally from Louisiana but earned my degree in Engineering from Mississippi State University in 2020. Hail State! After college, work brought me to Arkansas, where I live now. I am also a Commissioned Officer in the Arkansas Army National Guard, currently in the process of becoming an Army Aviator. I love coffee, the outdoors, history, and personal finance. I have the technical skills that make me a good developer, but my wealth of other non-technical and technical skills make me a valuable asset to any business.",
@@ -31,6 +31,11 @@
                 "name": "Twitter",
                 "url": "https://twitter.com/Markhodge75",
                 "className": "fa fa-twitter"
+            },
+            {
+                "name": "Instagram",
+                "url": "https://www.instagram.com/mark.hodge/",
+                "className": "fa fa-instagram"
             }
         ]
     },
