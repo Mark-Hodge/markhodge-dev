@@ -32,29 +32,44 @@
 	});
 
 /*----------------------------------------------------*/
-/* Highlight the current section in the navigation bar
+/* Highlight the current section in the navigation bar using jQuery
 ------------------------------------------------------*/
+   (function highlightNav() {
+      var prev; //keep track of previous selected link
+      var isVisible= function(el){
+          el = $(el);
+          
+          if(!el || el.length === 0){
+              return false
+          };
+  
+          var docViewTop = $(window).scrollTop();
+          var elemTop = el.offset().top;
 
-	var sections = $("section");
-	var navigation_links = $("#nav-wrap a");
-
-	sections.waypoint({
-
-      handler: function(event, direction) {
-
-		   var active_section;
-
-			active_section = $(this);
-			if (direction === "up") active_section = active_section.prev();
-
-			var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
-
-         navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
-
-		},
-		offset: '35%'
-	});
+          var retVal = (elemTop <= docViewTop);
+          return retVal;
+      }
+          
+      $(window).scroll(function(){
+          $('#nav-wrap a').each(function(index, el){
+              el = $(el);
+              if(isVisible(el.attr('href'))){
+                  if(prev){
+                      prev.parent().removeClass('current');
+                  }
+                  el.parent().addClass('current');
+                  prev = el;
+                  
+                  //break early to keep highlight on the first/highest visible element
+                  //remove this you want the link for the lowest/last visible element to be set instead
+                  // return false; 
+              }
+          });
+      });
+      
+      //trigger the scroll handler to highlight on page load
+      $(window).scroll();
+  })();
 
 /*----------------------------------------------------*/
 /*	Make sure that #header-background-image height is
