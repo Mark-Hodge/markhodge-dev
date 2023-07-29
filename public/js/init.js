@@ -46,7 +46,7 @@
           var docViewTop = $(window).scrollTop();
           var elemTop = el.offset().top;
 
-          var retVal = (elemTop <= docViewTop);
+          var retVal = ((elemTop <= docViewTop) || (elemTop <= docViewTop + 48));
           return retVal;
       }
           
