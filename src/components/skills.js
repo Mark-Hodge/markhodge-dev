@@ -29,6 +29,8 @@ function Skills() {
                     <Skill title="React" alt="The logo icon for react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
                     <Skill title="HTML 5" alt="The logo icon for HTML 5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
                     <Skill title="CSS 3" alt="The logo icon for CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                    <Skill title="Java" alt="The logo icon for Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+                    <Skill title="Typescript" alt="The logo icon for Typescript" img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
                 </div>
             </div>
         </section>
