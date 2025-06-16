@@ -44,20 +44,6 @@ const Resume = ({ data }) => {
                 </div>
             );
         });
-
-        var leadership = data.leadership.map(function (leadership) {
-            return (
-                <div key={leadership.title}>
-                    <h3>{leadership.title}</h3>
-                    <p className="info">
-                        {leadership.detail}
-                        <span>&bull;</span>
-                        <em className="date">{leadership.time}</em>
-                    </p>
-                    <p>{leadership.description}</p>
-                </div>
-            );
-        });
     }
 
     return (
@@ -94,17 +80,6 @@ const Resume = ({ data }) => {
                 </div>
 
                 <div className="nine columns main-col">{community}</div>
-            </div>
-
-            {/* Leadership */}
-            <div className="row leadership">
-                <div className="three columns header-col">
-                    <h1>
-                        <span>Leadership</span>
-                    </h1>
-                </div>
-
-                <div className="nine columns main-col">{leadership}</div>
             </div>
         </section>
     );

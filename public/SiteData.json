@@ -1,18 +1,17 @@
 {
     "main": {
         "name": "Mark Hodge",
-        "occupation": "Software Engineer, Service Member, Future Pilot, and I built this website too.",
-        "description": "I'm not on the typical tech career path, see what I can bring to the table!",
+        "occupation": "Software Engineer, Helicopter Pilot, and I built this website too.",
         "image": "mark-dock.jpeg",
-        "bio": "Hi, I am Mark Hodge. I have been a Software Engineer in the logistics industry for over three years, primarily working on backend projects. My front-end skills are self-taught, and this website is part of that. I am originally from Louisiana but earned my degree in Engineering from Mississippi State University in 2020. Hail State! After college, work brought me to Arkansas, where I live now. I am also a Commissioned Officer in the Arkansas Army National Guard, currently in the process of becoming an Army Aviator. I love coffee, the outdoors, history, and personal finance. I have the technical skills that make me a good developer, but my wealth of other non-technical and technical skills make me a valuable asset to any business.",
+        "bio": "Results-driven software engineer and U.S. Army National Guard helicopter pilot with 4+ years of experience delivering enterprise-grade software solutions in Agile environments. Demonstrated ability to lead end-to-end project execution, from development through deployment, across cloud-native and on-prem infrastructures using CI/CD pipelines, Kubernetes, and Google Cloud Platform. As a commissioned officer and executive officer in an aviation unit, brings disciplined leadership, operational planning, and risk management honed through flight operations and mission readiness. Combines technical fluency with strategic thinking and cross-functional collaboration to solve complex problems and drive high-impact initiatives forward in dynamic, fast-paced settings.",
         "contactmessage": "Lets Talk!",
-        "email": "info@markhodge.dev",
+        "email": "mark@markhodge.dev",
         "phone": "",    
         "address": {
             "street": "",
-            "city": "Fayetteville",
+            "city": "Rogers,",
             "state": "Arkansas",
-            "zip": "72704"
+            "zip": ""
         },
         "website": "https://markhodge.dev",
         "resumedownload": "https://markhodge.dev/download/resume.pdf ",
@@ -26,16 +25,6 @@
                 "name": "GitHub",
                 "url": "https://github.com/Mark-Hodge",
                 "className": "fa fa-github"
-            },
-            {
-                "name": "Twitter",
-                "url": "https://twitter.com/Markhodge75",
-                "className": "fa fa-twitter"
-            },
-            {
-                "name": "Instagram",
-                "url": "https://www.instagram.com/mark.hodge/",
-                "className": "fa fa-instagram"
             }
         ]
     },
@@ -44,51 +33,55 @@
             {
                 "company": "J. B. Hunt Transportation Services Inc.",
                 "title": "Software Engineer II",
-                "time": "July 2020 – Current",
-                "description": "Deliver new features and improvements to our customers. Work in a mid-size team where each developer has ownership of their deliverables. Peer review code and work closely with management and leads on new prrof of concept projects."
+                "time": "January 2022 – Current",
+                "description": "Led the planning, development, and deployment of new software features and bug fixes in Agile sprints, improving delivery consistency and team coordination. Managed sprint ceremonies, tracked progress using DevOps metrics, and oversaw microservices rollouts to Google Kubernetes Engine and on-prem environments via CI/CD pipelines, ensuring smooth releases and system stability through close collaboration with DevOps, QA, and security teams."
             },
             {
-                "company": "Arkansas Army National Guard",
-                "title": "Executive Officer, F Co ATS, 2-211th GSAB",
-                "time": "April 2023 – Current",
-                "description": "Act as the Chief of Staff to the commander, allowing the command team to focus more of their efforts on training and mission readiness for the various facilities the Air Traffic Services company is tasked with operating."
+                "company": "J. B. Hunt Transportation Services Inc.",
+                "title": "Software Engineer I",
+                "time": "July 2020 – January 2022",
+                "description": "Delivered enhancements and defect fixes for core applications by leading sprint planning, backlog grooming, and release coordination. Managed tasks across multiple workstreams during a legacy system modernization to a cloud-native architecture, ensuring deployment readiness and build integrity. Collaborated closely with engineering, product, and infrastructure teams to meet release milestones and support post-deployment reliability."
             },
             {
                 "company": "Raspet Flight Research Laboratory",
                 "title": "Student Research Assistant",
                 "time": "January 2019 – May 2020",
-                "description": "Assist lab personnel with day-to-day tasks including UAS maintence and flight operations. Develop experimental code for use when monitoring esting aircraft limitations during icing conditions. Work closely with the Chief Pilot and Aerospace Engineers."
+                "description": "Designed a real-time data visualization tool for unmanned aircraft systems (UAS) to support research flight crews, and assisted with flight operations for both manned and unmanned systems."
             }
         ],
         "education": [
             {
-                "school": "The United States Army Officer Candidate School",
-                "degree": "Second Lieutenant, Aviation, Arkansas Army National Guard",
-                "graduated": "April 2023",
-                "description": "Completed the twelve-week course in a single attempt. Training in Garrison and field leadership abilities, fitness, land navigation, military history, ethics, military justice, large-scale combat operations, and various soldier management practices."
-            },
-            {
                 "school": "Mississippi State University",
-                "degree": "BSE, Software Engineering",
+                "degree": "Bachelor of Science in Software Engineering",
                 "graduated": "May 2020",
                 "description": "Earned a degree in Software Engineering and an Information Assurance Certificate from the James Worth Bagley College of Engineering"
+            },
+            {
+                "school": "The United States Army",
+                "degree": "Officer Candidate School",
+                "graduated": "April 2023",
+                "description": "Completed the twelve-week course with training in garrison and field leadership abilities, soldier and resource management, fitness, time/resource management and planning, military history, ethics, military law, and various team management practices."
             }
         ],
         "skillsmessage": "My Programming Language Skills Are Always Growing",
         "community": [
             {
+                "title": "Arkansas Army National Guard",
+                "detail": "Helicopter Pilot",
+                "time": "April 2025 - Current",
+                "description": "UH-60M Blackhawk and LUH-72A Lakota, currently assigned to the LUH-72A aircraft."
+            },
+            {
+                "title": "Arkansas Army National Guard",
+                "detail": "Executive Officer, Headquarters Company, 1-114th Aviation Regiment",
+                "time": "February 2025 - Current",
+                "description": "Serve as the unit’s Chief of Staff, overseeing operational readiness, logistical coordination, and administrative planning across multiple functional areas in support of the commander’s vision."
+            },
+            {
                 "title": "East Oktibbeha Volunteer Fire Department",
                 "detail": "Volunteer Firefighter",
                 "time": "September 2018 – August 2020",
-                "description": "Communicate with inter-departmental personnel to handle pre-scene arrival and on-scene operations. Coordinate with department officers, EMS, law enforcement, and Dispatch to maintain scene safety, unity of command, and continuation of operations. Provide basic care to patients suffering from medical emergencies, vehicle collisions, fires, and other incidents."
-            }
-        ],
-        "leadership": [
-            {
-                "title": "Delta Chi Fraternity Mississippi State Chapter",
-                "detail": "President,",
-                "time": "November 2017 – November 2018",
-                "description": "Serve as principal representative to various boards, councils, and offices dealing with fraternity operations, university Greek life policies, fraternity board of trustees, and housing operations and finance. Delegated to subordinate officers and provided guidance when necessary to keep aligned with overall objectives. Shared responsibility with the Chapter Treasurer for budgeting and collecting $50,000 yearly for operations and $100,000 yearly for housing costs."
+                "description": "Led coordination during emergency operations between law enforcement, EMS, and internal teams, ensuring clarity in command and timely medical response. Managed on-scene logistics and communications during time-sensitive, high-pressure events."
             }
         ]
     }
